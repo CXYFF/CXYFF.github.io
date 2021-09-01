@@ -46,7 +46,7 @@
 <meta property="og:image" content="http://example.com/2021/09/01/setupuBlog/hexog.png">
 <meta property="og:image" content="http://example.com/2021/09/01/setupuBlog/hexod.png">
 <meta property="article:published_time" content="2021-09-01T06:10:31.806Z">
-<meta property="article:modified_time" content="2021-09-01T06:18:21.432Z">
+<meta property="article:modified_time" content="2021-09-01T06:21:28.696Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/09/01/setupuBlog/nodejs.png">
@@ -195,100 +195,100 @@
 <h1 id="和大家分享一下如何搭建自己的Blog吧！"><a href="#和大家分享一下如何搭建自己的Blog吧！" class="headerlink" title="和大家分享一下如何搭建自己的Blog吧！"></a>和大家分享一下如何搭建自己的Blog吧！</h1><p>经过一番折腾，终于搭建成功！现在跟大家分享一下如何通过hexo搭建自己的个人博客。附上完整流程，希望对各位有帮助，后续个性化设置可以一起交流分享！</p>
 <span id="more"></span>
 
-<h3 id="1-安装nodejs和npm（https-nodejs-org）"><a href="#1-安装nodejs和npm（https-nodejs-org）" class="headerlink" title="1.安装nodejs和npm（https://nodejs.org）"></a>1.安装nodejs和npm（<a target="_blank" rel="noopener" href="https://nodejs.org)/">https://nodejs.org）</a></h3><p>这边我们选择左侧的稳定版进行下载</p>
-<img src="/2021/09/01/setupuBlog/nodejs.png" class="" title="nodejs">
+<h3 id="1-安装nodejs和npm（https-nodejs-org-）"><a href="#1-安装nodejs和npm（https-nodejs-org-）" class="headerlink" title="1.安装nodejs和npm（https://nodejs.org/）"></a>1.安装nodejs和npm（<a target="_blank" rel="noopener" href="https://nodejs.org/%EF%BC%89">https://nodejs.org/）</a></h3><p>这边我们选择左侧的稳定版进行下载</p>
+<img src="/2021/09/01/setupuBlog/nodejs.png" class title="nodejs">
 
 <p>下载完之后进行解压安装（一直点next就ok，储存位置我选择装在D:\nodejs，可自行创建)</p>
-<img src="/2021/09/01/setupuBlog/nodev14.png" class="" title="nodev14">
+<img src="/2021/09/01/setupuBlog/nodev14.png" class title="nodev14">
 
 <p>完成之后可以在<code>cmd</code>中进行检查是否安装成功（<code>win+R</code>，输入<code>cmd</code>打开管理器，输入<code>node -v</code>和<code>npm -v</code>,查看版本，如果你和下图一样，那么恭喜你已经成功安装nodejs和npm包管理器！）</p>
-<img src="/2021/09/01/setupuBlog/check.png" class="" title="check">
+<img src="/2021/09/01/setupuBlog/check.png" class title="check">
 
 <p>由于<code>npm</code>在国内镜像源速度太慢，我们可以选择用npm安装阿里镜像（<code>cnpm</code>），如下图</p>
-<img src="/2021/09/01/setupuBlog/cnpm.png" class="" title="cnpm">
+<img src="/2021/09/01/setupuBlog/cnpm.png" class title="cnpm">
 
 <p>安装成功！</p>
-<img src="/2021/09/01/setupuBlog/cnpmok.png" class="" title="cnpmok">
+<img src="/2021/09/01/setupuBlog/cnpmok.png" class title="cnpmok">
 
 <h3 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h3><p>安装完<code>cnpm</code>后，我们可以利用<code>cnpm</code>来安装<code>hexo</code></p>
-<img src="/2021/09/01/setupuBlog/hexo.png" class="" title="hexo">
+<img src="/2021/09/01/setupuBlog/hexo.png" class title="hexo">
 
 <p>安装完成如下显示</p>
-<img src="/2021/09/01/setupuBlog/hexook.png" class="" title="hexook">
+<img src="/2021/09/01/setupuBlog/hexook.png" class title="hexook">
 
 <p>我们可以查看一下hexo版本，确保安装完成</p>
-<img src="/2021/09/01/setupuBlog/hexocheckv.png" class="" title="hexocheckv">
+<img src="/2021/09/01/setupuBlog/hexocheckv.png" class title="hexocheckv">
 
-<h3 id="3-Github官网（https-github-com）"><a href="#3-Github官网（https-github-com）" class="headerlink" title="3.Github官网（https://github.com）"></a>3.Github官网（<a target="_blank" rel="noopener" href="https://github.com)/">https://github.com）</a></h3><p>进入官网先注册账号，这里就不在赘述</p>
+<h3 id="3-Github官网（https-github-com-）"><a href="#3-Github官网（https-github-com-）" class="headerlink" title="3.Github官网（https://github.com/）"></a>3.Github官网（<a target="_blank" rel="noopener" href="https://github.com/%EF%BC%89">https://github.com/）</a></h3><p>进入官网先注册账号，这里就不在赘述</p>
 <p>注册完成之后点击右上角<code>+</code>创新新仓库</p>
-<img src="/2021/09/01/setupuBlog/github.png" class="" title="github">
+<img src="/2021/09/01/setupuBlog/github.png" class title="github">
 
 <p>注意这里<code>Repository name</code>填写格式为<code>你的ID + github + io</code>,注意格式不要错误！我这里报错是因为之前创建果，不能重复创建，不用在意</p>
-<img src="/2021/09/01/setupuBlog/ghid.png" class="" title="ghid">
+<img src="/2021/09/01/setupuBlog/ghid.png" class title="ghid">
 
 <p>其他属性默认，下滑进行创建</p>
 
 
 <p>得到你的github链接</p>
-<img src="/2021/09/01/setupuBlog/ssh.png" class="" title="ssh">
+<img src="/2021/09/01/setupuBlog/ssh.png" class title="ssh">
 
 <h3 id="4-初始化hexo"><a href="#4-初始化hexo" class="headerlink" title="4.初始化hexo"></a>4.初始化hexo</h3><p>在D盘创建空白文件夹，这里我们把它命名<code>blog</code></p>
 <p>在cmd中刚进入D盘里的blog文件夹（先输入<code>D:</code>进入D盘，在输入<code>cd blog</code>进入blog文件夹）</p>
 <p>进入blog文件夹后，我们输入<code>hexo init</code>初始化我们的博客</p>
-<img src="/2021/09/01/setupuBlog/hexoinit.png" class="" title="hexoinit">
+<img src="/2021/09/01/setupuBlog/hexoinit.png" class title="hexoinit">
 
 <p>完成后显示</p>
-<img src="/2021/09/01/setupuBlog/initblog.png" class="" title="initblog">
+<img src="/2021/09/01/setupuBlog/initblog.png" class title="initblog">
 
 <p>输入<code>hexo s</code>即可创建本地博客</p>
-<img src="/2021/09/01/setupuBlog/hexos.png" class="" title="hexos">
+<img src="/2021/09/01/setupuBlog/hexos.png" class title="hexos">
 
 <p>把这个网址复制到浏览器，即可打开我们的本地博客啦！（如果localhost：4000打不开，说明你的4000端口被占用，改成5000试一试）</p>
 <h3 id="5-安装及配置Git"><a href="#5-安装及配置Git" class="headerlink" title="5.安装及配置Git"></a>5.安装及配置Git</h3><p>我是在电脑管家里直接搜索<code>git</code>，直接安装,也是一直next（其他途径也可）</p>
-<img src="/2021/09/01/setupuBlog/git.png" class="" title="git">
+<img src="/2021/09/01/setupuBlog/git.png" class title="git">
 
 <p>这边我安装在<code>D:\git</code>，可以看到已经安装好了，接下来我们点开<code>gitBash</code></p>
-<img src="/2021/09/01/setupuBlog/gitbash.png" class="" title="gitbash">
+<img src="/2021/09/01/setupuBlog/gitbash.png" class title="gitbash">
 
 <p>进入D盘blog文件夹（<code>cd D:\blog</code>)</p>
-<img src="/2021/09/01/setupuBlog/gbd.png" class="" title="gbd">
+<img src="/2021/09/01/setupuBlog/gbd.png" class title="gbd">
 
 <p>先安装一个git的部署插件（输入<code>cnpm install --save hexo-deployer-git</code>）</p>
-<img src="/2021/09/01/setupuBlog/gitbushu.png" class="" title="gitbushu">
+<img src="/2021/09/01/setupuBlog/gitbushu.png" class title="gitbushu">
 
 <p>接下来我们来配置Git（配置用户名<code>$ git config --global user.name.你的用户名</code>配置邮箱<code>$ git config --global user.email 你的邮箱</code>设置ssh<code>$ ssh-keygen -c &quot;你的邮箱&quot; -t rsa</code>）</p>
-<img src="/2021/09/01/setupuBlog/usname.png" class="" title="usname">
+<img src="/2021/09/01/setupuBlog/usname.png" class title="usname">
 
-<img src="/2021/09/01/setupuBlog/uemail.png" class="" title="uemail">
+<img src="/2021/09/01/setupuBlog/uemail.png" class title="uemail">
 
-<img src="/2021/09/01/setupuBlog/sshgen.png" class="" title="sshgen">
+<img src="/2021/09/01/setupuBlog/sshgen.png" class title="sshgen">
 
 <p>此时你的<code>C盘Users/Administrator</code>目录生产了一个ssh文件夹，文件夹里有两个ssh文件</p>
-<img src="/2021/09/01/setupuBlog/pagessh.png" class="" title="pagessh">
+<img src="/2021/09/01/setupuBlog/pagessh.png" class title="pagessh">
 
-<img src="/2021/09/01/setupuBlog/sshkey.png" class="" title="sshkey">
+<img src="/2021/09/01/setupuBlog/sshkey.png" class title="sshkey">
 
 <h3 id="6-设置ssh秘钥"><a href="#6-设置ssh秘钥" class="headerlink" title="6.设置ssh秘钥"></a>6.设置ssh秘钥</h3><p>再回到github网页，点击右上角你的头像，下拉菜单选择<code>setting</code>，进入设置后选择<code>SSH and GPG keys</code></p>
-<img src="/2021/09/01/setupuBlog/gpgkey.png" class="" title="gpgkey">
+<img src="/2021/09/01/setupuBlog/gpgkey.png" class title="gpgkey">
 
 <p>点击右上角绿色框<code>New SSH key</code></p>
 <p>用记事本打开ssh文件夹下面id_rsa.pub文件，全选，复制到key栏，点击提交（tittle可以不写）ssh秘钥设置完成啦！</p>
-<img src="/2021/09/01/setupuBlog/1.png" class="" width="1">
+<img src="/2021/09/01/setupuBlog/1.png" class width="1">
 
 <h3 id="7-更改-config-yml文件"><a href="#7-更改-config-yml文件" class="headerlink" title="7.更改_config.yml文件"></a>7.更改_config.yml文件</h3><p>我们先进入我的电脑,打开D盘，blog文件夹用记事本打开_config.yml文件</p>
-<img src="/2021/09/01/setupuBlog/yml.png" class="" title="yml">
+<img src="/2021/09/01/setupuBlog/yml.png" class title="yml">
 
 <p>进度条拉到最底下，按图更改<code># Deployment</code>下面的属性（注意<code>:</code>后要加空格，否则会不成功）</p>
-<img src="/2021/09/01/setupuBlog/dp.png" class="" title="dp">
+<img src="/2021/09/01/setupuBlog/dp.png" class title="dp">
 
 <p>repo后面的网址是第三步最后得到的github链接，复制进去</p>
-<img src="/2021/09/01/setupuBlog/ssh.png" class="" title="ssh">
+<img src="/2021/09/01/setupuBlog/ssh.png" class title="ssh">
 
 <h3 id="8-生成静态网页及部署到远端"><a href="#8-生成静态网页及部署到远端" class="headerlink" title="8.生成静态网页及部署到远端"></a>8.生成静态网页及部署到远端</h3><p>在Git bash中进入到blog文件夹，输入<code>hexo g</code>生成静态网页</p>
-<img src="/2021/09/01/setupuBlog/hexog.png" class="" title="hexog">
+<img src="/2021/09/01/setupuBlog/hexog.png" class title="hexog">
 
 <p>输入<code>hexo d</code>部署到远端</p>
-<img src="/2021/09/01/setupuBlog/hexod.png" class="" title="hexod">
+<img src="/2021/09/01/setupuBlog/hexod.png" class title="hexod">
 
 <h3 id="9-来看看我们的博客吧！"><a href="#9-来看看我们的博客吧！" class="headerlink" title="9.来看看我们的博客吧！"></a>9.来看看我们的博客吧！</h3><p>上一步完成，我们的博客已经部署到github，小伙伴也可以随时查看你的博客啦！</p>
 <p>在浏览器输入第三步得到的github生成的网址，就可以进入我们自己的博客啦！</p>
