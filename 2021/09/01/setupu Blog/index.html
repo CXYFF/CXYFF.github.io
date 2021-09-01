@@ -6,23 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>vue | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Vue学习vue的笔记">
+  <meta name="description" content="感谢来访~ 和大家分享一下如何搭建自己的Blog吧！经过一番折腾，终于搭建成功！现在跟大家分享一下如何通过hexo搭建自己的个人博客。附上完整流程，希望对各位有帮助，后续个性化设置可以一起交流分享！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue">
-<meta property="og:url" content="http://example.com/2021/09/01/vue/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/09/01/setupu%20Blog/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Vue学习vue的笔记">
+<meta property="og:description" content="感谢来访~ 和大家分享一下如何搭建自己的Blog吧！经过一番折腾，终于搭建成功！现在跟大家分享一下如何通过hexo搭建自己的个人博客。附上完整流程，希望对各位有帮助，后续个性化设置可以一起交流分享！">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2021/09/01/vue/mvvm.png">
-<meta property="og:image" content="http://example.com/2021/09/01/vue/mvvm2.png">
-<meta property="og:image" content="http://example.com/2021/09/01/vue/option.png">
-<meta property="article:published_time" content="2021-09-01T00:51:41.000Z">
-<meta property="article:modified_time" content="2021-09-01T01:24:25.313Z">
+<meta property="article:published_time" content="2021-09-01T06:10:31.806Z">
+<meta property="article:modified_time" content="2021-09-01T06:18:21.432Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/09/01/vue/mvvm.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -159,52 +155,113 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-setupu Blog" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      vue
-    </h1>
-  
-
-        
-        <a href="/2021/09/01/vue/" class="archive-article-date">
-  	<time datetime="2021-09-01T00:51:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-01</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><p>学习vue的笔记</p>
+        <p>感谢来访~</p>
+<h1 id="和大家分享一下如何搭建自己的Blog吧！"><a href="#和大家分享一下如何搭建自己的Blog吧！" class="headerlink" title="和大家分享一下如何搭建自己的Blog吧！"></a>和大家分享一下如何搭建自己的Blog吧！</h1><p>经过一番折腾，终于搭建成功！现在跟大家分享一下如何通过hexo搭建自己的个人博客。附上完整流程，希望对各位有帮助，后续个性化设置可以一起交流分享！</p>
 <span id="more"></span>
 
-<h1 id="1-认识vuejs"><a href="#1-认识vuejs" class="headerlink" title="1.认识vuejs"></a>1.认识vuejs</h1><p>vue是的编程范式是一种==声明式==编程，js是一种==命令式==编程</p>
-<p>vue能够实现前后端分离，网页通过响应后台的data来对网页上的数据进行更改</p>
-<p>n创建Vue对象的时候，传入了一些options：{}</p>
-<p>{}中包含了==el==属性：该属性决定了这个Vue对象挂载到哪一个元素上，很明显，我们这里是挂载到了id为app的元素上</p>
-<p>{}中包含了==data==属性：该属性中通常会存储一些数据</p>
-<p>这些数据可以是我们直接定义出来的，比如像上面这样。</p>
-<p>也可能是来自网络，从==服务器==加载的</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot;&gt;&#123;&#123;message&#125;&#125;&lt;/div&gt;</span><br><span class="line"> &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"> &lt;script&gt;</span><br><span class="line">   const app = new Vue(&#123;</span><br><span class="line">     el: &#x27;#app&#x27;,//用于挂载要管理的元素</span><br><span class="line">     data: &#123;//定义数据</span><br><span class="line">       message: &#x27;你好啊，李银河&#x27;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;)</span><br><span class="line"> &lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-计数器案例：medths属性"><a href="#2-计数器案例：medths属性" class="headerlink" title="2.计数器案例：medths属性"></a>2.计数器案例：medths属性</h2><p>methods：在vue中定义新方法</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">       &lt;h2&gt;计数器：&#123;&#123;counter&#125;&#125;&lt;/h2&gt;</span><br><span class="line">       &lt;button v-on:click=&#x27;add&#x27;&gt;+&lt;/button&gt; //点击事件</span><br><span class="line">       &lt;button @click=&#x27;sub&#x27;&gt;-&lt;/button&gt;//语法糖：@click = v-on:click</span><br><span class="line">   &lt;/div&gt;</span><br><span class="line">   &lt;script src=&#x27;../js/vue.js&#x27;&gt;&lt;/script&gt;</span><br><span class="line">   &lt;script&gt;</span><br><span class="line">       const app = new Vue(&#123;</span><br><span class="line">           el: &quot;#app&quot;,</span><br><span class="line">           data: &#123;</span><br><span class="line">               counter: 0</span><br><span class="line">           &#125;,</span><br><span class="line">           //methods：在vue中定义新方法</span><br><span class="line">           methods: &#123;</span><br><span class="line">               add: function () &#123;</span><br><span class="line">                   console.log(&#x27;add被执行&#x27;);</span><br><span class="line">                   this.counter++//不能直接counter++，因为全局变量没有声明counter，局部变量在这里也调用不了,使用this</span><br><span class="line">               &#125;,</span><br><span class="line">               sub: function () &#123;</span><br><span class="line">                   console.log(&#x27;sub被执行&#x27;);</span><br><span class="line">                   this.counter--</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;)</span><br><span class="line">   &lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-MVVM"><a href="#3-MVVM" class="headerlink" title="3.MVVM"></a>3.MVVM</h2><img src="/2021/09/01/vue/mvvm.png" class="" title="mvvm">
-
-<img src="/2021/09/01/vue/mvvm2.png" class="" title="mvvm2">
+<h3 id="1-安装nodejs和npm（https-nodejs-org）"><a href="#1-安装nodejs和npm（https-nodejs-org）" class="headerlink" title="1.安装nodejs和npm（https://nodejs.org）"></a>1.安装nodejs和npm（<a target="_blank" rel="noopener" href="https://nodejs.org)/">https://nodejs.org）</a></h3><p>这边我们选择左侧的稳定版进行下载</p>
 
 
+<p>下载完之后进行解压安装（一直点next就ok，储存位置我选择装在D:\nodejs，可自行创建)</p>
 
-<h2 id="4-创建实例输入的option类型"><a href="#4-创建实例输入的option类型" class="headerlink" title="4.创建实例输入的option类型"></a>4.创建实例输入的option类型</h2><img src="/2021/09/01/vue/option.png" class="" title="option">
 
-<h4 id="4-1方法-method-和函数（function-如何区分"><a href="#4-1方法-method-和函数（function-如何区分" class="headerlink" title="4.1方法(method)和函数（function)如何区分"></a>4.1方法(method)和函数（function)如何区分</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">         方法： function () &#123;</span><br><span class="line">               this.counter++</span><br><span class="line">           &#125;//方法与某个实例或者对象挂钩</span><br><span class="line">函数： function () &#123;</span><br><span class="line">               counter++</span><br><span class="line">           &#125;//函数是独立的</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>完成之后可以在<code>cmd</code>中进行检查是否安装成功（<code>win+R</code>，输入<code>cmd</code>打开管理器，输入<code>node -v</code>和<code>npm -v</code>,查看版本，如果你和下图一样，那么恭喜你已经成功安装nodejs和npm包管理器！）</p>
 
-<h2 id="5-理解）生命周期"><a href="#5-理解）生命周期" class="headerlink" title="5.(理解）生命周期"></a>5.(理解）生命周期</h2><p>Vue 实例从创建到销毁的过程，就是生命周期。也就是从开始创建、初始化数据、编译模板、挂载Dom→渲染、更新→渲染、卸载等一系列过程，我们称这是 Vue 的生命周期。</p>
+
+<p>由于<code>npm</code>在国内镜像源速度太慢，我们可以选择用npm安装阿里镜像（<code>cnpm</code>），如下图</p>
+
+
+<p>安装成功！</p>
+
+
+<h3 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h3><p>安装完<code>cnpm</code>后，我们可以利用<code>cnpm</code>来安装<code>hexo</code></p>
+
+
+<p>安装完成如下显示</p>
+
+
+<p>我们可以查看一下hexo版本，确保安装完成</p>
+
+
+<h3 id="3-Github官网（https-github-com）"><a href="#3-Github官网（https-github-com）" class="headerlink" title="3.Github官网（https://github.com）"></a>3.Github官网（<a target="_blank" rel="noopener" href="https://github.com)/">https://github.com）</a></h3><p>进入官网先注册账号，这里就不在赘述</p>
+<p>注册完成之后点击右上角<code>+</code>创新新仓库</p>
+
+
+<p>注意这里<code>Repository name</code>填写格式为<code>你的ID + github + io</code>,注意格式不要错误！我这里报错是因为之前创建果，不能重复创建，不用在意</p>
+
+
+<p>其他属性默认，下滑进行创建</p>
+
+
+<p>得到你的github链接</p>
+
+
+<h3 id="4-初始化hexo"><a href="#4-初始化hexo" class="headerlink" title="4.初始化hexo"></a>4.初始化hexo</h3><p>在D盘创建空白文件夹，这里我们把它命名<code>blog</code></p>
+<p>在cmd中刚进入D盘里的blog文件夹（先输入<code>D:</code>进入D盘，在输入<code>cd blog</code>进入blog文件夹）</p>
+<p>进入blog文件夹后，我们输入<code>hexo init</code>初始化我们的博客</p>
+
+
+<p>完成后显示</p>
+
+
+<p>输入<code>hexo s</code>即可创建本地博客</p>
+
+
+<p>把这个网址复制到浏览器，即可打开我们的本地博客啦！（如果localhost：4000打不开，说明你的4000端口被占用，改成5000试一试）</p>
+<h3 id="5-安装及配置Git"><a href="#5-安装及配置Git" class="headerlink" title="5.安装及配置Git"></a>5.安装及配置Git</h3><p>我是在电脑管家里直接搜索<code>git</code>，直接安装,也是一直next（其他途径也可）</p>
+
+
+<p>这边我安装在<code>D:\git</code>，可以看到已经安装好了，接下来我们点开<code>gitBash</code></p>
+
+
+<p>进入D盘blog文件夹（<code>cd D:\blog</code>)</p>
+
+
+<p>先安装一个git的部署插件（输入<code>cnpm install --save hexo-deployer-git</code>）</p>
+
+
+<p>接下来我们来配置Git（配置用户名<code>$ git config --global user.name.你的用户名</code>配置邮箱<code>$ git config --global user.email 你的邮箱</code>设置ssh<code>$ ssh-keygen -c &quot;你的邮箱&quot; -t rsa</code>）</p>
+
+
+
+
+
+
+<p>此时你的<code>C盘Users/Administrator</code>目录生产了一个ssh文件夹，文件夹里有两个ssh文件</p>
+
+
+
+
+<h3 id="6-设置ssh秘钥"><a href="#6-设置ssh秘钥" class="headerlink" title="6.设置ssh秘钥"></a>6.设置ssh秘钥</h3><p>再回到github网页，点击右上角你的头像，下拉菜单选择<code>setting</code>，进入设置后选择<code>SSH and GPG keys</code></p>
+
+
+<p>点击右上角绿色框<code>New SSH key</code></p>
+<p>用记事本打开ssh文件夹下面id_rsa.pub文件，全选，复制到key栏，点击提交（tittle可以不写）ssh秘钥设置完成啦！</p>
+
+
+<h3 id="7-更改-config-yml文件"><a href="#7-更改-config-yml文件" class="headerlink" title="7.更改_config.yml文件"></a>7.更改_config.yml文件</h3><p>我们先进入我的电脑,打开D盘，blog文件夹用记事本打开_config.yml文件</p>
+
+
+<p>进度条拉到最底下，按图更改<code># Deployment</code>下面的属性（注意<code>:</code>后要加空格，否则会不成功）</p>
+
+
+<p>repo后面的网址是第三步最后得到的github链接，复制进去</p>
+
+
+<h3 id="8-生成静态网页及部署到远端"><a href="#8-生成静态网页及部署到远端" class="headerlink" title="8.生成静态网页及部署到远端"></a>8.生成静态网页及部署到远端</h3><p>在Git bash中进入到blog文件夹，输入<code>hexo g</code>生成静态网页</p>
+
+
+<p>输入<code>hexo d</code>部署到远端</p>
+
+
+<h3 id="9-来看看我们的博客吧！"><a href="#9-来看看我们的博客吧！" class="headerlink" title="9.来看看我们的博客吧！"></a>9.来看看我们的博客吧！</h3><p>上一步完成，我们的博客已经部署到github，小伙伴也可以随时查看你的博客啦！</p>
+<p>在浏览器输入第三步得到的github生成的网址，就可以进入我们自己的博客啦！</p>
+<p>（这是我的博客<code>CXYFF.github.io</code>，欢迎大家来访问！不定时更新有用的干货分享！谢谢！)</p>
 
       
 
@@ -284,7 +341,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/09/01/vue/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/09/01/setupu%20Blog/" alt="微信分享二维码">
     </div>
 </div>
 
