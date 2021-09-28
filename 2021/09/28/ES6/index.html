@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="感谢来访~ 分享一下项目进程中常用的ES6用法​        后续会不断补充！">
+  <meta name="description" content="ES6分享一下项目进程中常用的ES6用法​        后续会不断补充！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2021/09/23/ES6/index.html">
+<meta property="og:url" content="http://example.com/2021/09/28/ES6/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="感谢来访~ 分享一下项目进程中常用的ES6用法​        后续会不断补充！">
+<meta property="og:description" content="ES6分享一下项目进程中常用的ES6用法​        后续会不断补充！">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-09-23T05:47:30.793Z">
-<meta property="article:modified_time" content="2021-09-23T05:46:59.615Z">
+<meta property="article:published_time" content="2021-09-28T00:35:56.434Z">
+<meta property="article:modified_time" content="2021-09-28T00:36:15.545Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -160,8 +160,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>感谢来访~</p>
-<h1 id="分享一下项目进程中常用的ES6用法"><a href="#分享一下项目进程中常用的ES6用法" class="headerlink" title="分享一下项目进程中常用的ES6用法"></a>分享一下项目进程中常用的ES6用法</h1><p>​        后续会不断补充！</p>
+        <h1 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h1><h1 id="分享一下项目进程中常用的ES6用法"><a href="#分享一下项目进程中常用的ES6用法" class="headerlink" title="分享一下项目进程中常用的ES6用法"></a>分享一下项目进程中常用的ES6用法</h1><p>​        后续会不断补充！</p>
 <span id="more"></span>
 
 <h3 id="5-1-块级作用域let-var"><a href="#5-1-块级作用域let-var" class="headerlink" title="5.1    块级作用域let-var"></a>5.1    块级作用域let-var</h3><p><code>let</code>就是优化版的<code>var</code></p>
@@ -223,7 +222,7 @@
 <h3 id="5-8-模板字符串"><a href="#5-8-模板字符串" class="headerlink" title="5.8    模板字符串(``)"></a>5.8    模板字符串(``)</h3><p>普通的字符串格式：<code>&quot;&quot;</code>和<code>&#39;&#39;</code>。</p>
 <p>模板字符串格式：``</p>
 <p>模板字符串可以直接换行（普通的不行），且会识别中间所有的空格和换行符</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">template: <span class="string">`</span></span><br><span class="line"><span class="string">      &lt;div&gt;</span></span><br><span class="line"><span class="string">        &lt;h2&gt;我是标题&lt;/h2&gt;</span></span><br><span class="line"><span class="string">        &lt;p&gt;我是内容,哈哈哈哈啊&lt;/p&gt;</span></span><br><span class="line"><span class="string">      &lt;/div&gt;</span></span><br><span class="line"><span class="string">    `</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">template: <span class="string">`</span></span><br><span class="line"><span class="string">      &lt;div&gt;</span></span><br><span class="line"><span class="string">        &lt;h2&gt;我是标题&lt;/h2&gt;</span></span><br><span class="line"><span class="string">        &lt;p&gt;我是内容,哈哈哈哈啊&lt;/p&gt;</span></span><br><span class="line"><span class="string">      &lt;/div&gt;</span></span><br><span class="line"><span class="string">    `</span></span><br><span class="line"></span><br><span class="line"> conlose.log(<span class="string">`我是<span class="subst">$&#123;name&#125;</span>,我今年<span class="subst">$&#123;age&#125;</span>岁`</span>)   </span><br></pre></td></tr></table></figure>
 
 <h3 id="5-9-解构赋值"><a href="#5-9-解构赋值" class="headerlink" title="5.9    解构赋值"></a>5.9    解构赋值</h3><h4 id="5-9-1-普通写法"><a href="#5-9-1-普通写法" class="headerlink" title="5.9.1     普通写法"></a>5.9.1     普通写法</h4><p>从<code>&#39;./aaa.js&#39;</code>文件中取得我们想要的模块，并赋值给<code>aaa</code>，在分别调用aaa中的<code>flag</code>和<code>sum</code>属性</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> aaa = <span class="built_in">require</span>(<span class="string">&#x27;./aaa.js&#x27;</span>) <span class="comment">//从&#x27;./aaa.js&#x27;文件中取得我们想要的模块，并赋值给aaa，在分别调用aaa中的falg和sum属性</span></span><br><span class="line"><span class="keyword">var</span> flag = aaa.flag;</span><br><span class="line"><span class="keyword">var</span> sum = aaa.sum;</span><br></pre></td></tr></table></figure>
@@ -260,6 +259,7 @@
 <h4 id="5-12-4-this的指向问题"><a href="#5-12-4-this的指向问题" class="headerlink" title="5.12.4    this的指向问题"></a>5.12.4    this的指向问题</h4><p><strong>问题</strong>: 箭头函数中的this是如何查找的了?</p>
 <p><strong>答案</strong>: 向外层作用域中, 一层层查找this, 直到有this的定义.</p>
 <p><strong>说明</strong>：<strong>带function函数的都指向window</strong></p>
+<p><strong>箭头函数的this指向函数定义时的对象</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">    <span class="function"><span class="title">aaa</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">      <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">this</span>); <span class="comment">// window</span></span><br><span class="line">      &#125;)</span><br><span class="line">  	<span class="comment">//this 此处即为箭头函数的上一层，this在obj的作用域中，所以指向this</span></span><br><span class="line">      <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">this</span>); <span class="comment">// obj对象</span></span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  obj.aaa()</span><br></pre></td></tr></table></figure>
 
 <p><strong>进阶</strong></p>
@@ -392,7 +392,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/09/23/ES6/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/09/28/ES6/" alt="微信分享二维码">
     </div>
 </div>
 
